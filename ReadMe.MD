@@ -1,3 +1,6 @@
+## Website
+https://desolate-falls-47463.herokuapp.com
+
 ## References
 
 https://towardsdatascience.com/scraping-reddit-data-1c0af3040768- Scrapping data
@@ -6,8 +9,8 @@ https://medium.com/@RareLoot/using-pushshifts-api-to-extract-reddit-submissions-
 https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html  -Motivation fro data cleaning
 ## Data Collection
 
-1)Praw was used to try and get 1000 data points for each flair. It gave only around 200 for each.
-2)Currently working on getting more data points using pushshifts.io, using which more data can be accumulated.
+1)Praw was used to try and get 1000 data points for each flair. It gave only around 200 for each.(space)
+2)Currently working on getting more data points using pushshifts.io, using which more data can be accumulated.(space)
 3) Data was preprocessed using nltk and other libraries such as contractions
 
 ## Initially Logistic regression was applied with features as shown below
