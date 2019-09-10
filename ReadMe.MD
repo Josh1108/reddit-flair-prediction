@@ -6,7 +6,7 @@ https://desolate-falls-47463.herokuapp.com
 https://towardsdatascience.com/scraping-reddit-data-1c0af3040768- Scrapping data
 https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html- Praw
 https://medium.com/@RareLoot/using-pushshifts-api-to-extract-reddit-submissions-fb517b286563- Extracting more data
-https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html  -Motivation fro data cleaning
+https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html  -Motivation for data cleaning
 ## Data Collection
 
 1)Praw was used to try and get 1000 data points for each flair. It gave only around 200 for each. Including all the comments of that submission / post    
@@ -67,7 +67,7 @@ num_comments and score is dropped since they clearly have no relevance with the 
 | Title+body+comments+url  | 77.02% |
 
 Since Logistic regression showed the best accuracy, it was chosen for our model.
-Using l1 penalty suprisingly gave way to better results, probably because of the so called 'inbuilt feature selection' by which it gives 0 weights to some of the features.
+Using l1 penalty suprisingly gave way to better results, probably because of the'inbuilt feature selection' by which it gives 0 weights to some of the features.
 
 GridCV was used to find optimum parameter in all algorithms.
 
@@ -77,4 +77,6 @@ various combinations of the features mentioned above were made, but all resulted
 
 Remaining tasks:
 1) Accumulate more data(comments and body is remaining in the new data)
-2) Create statistics for the website
+2) Create statistics for the website  
+-private data is present in scripts. Have to replace them by place holders.
+
