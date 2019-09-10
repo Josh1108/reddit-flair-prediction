@@ -1,8 +1,19 @@
 
 {% extends "base.html" %}
 {% block content%}
-<h2>The flair linked with this post is: {{result}}</h2>
+<div class="masthead clearfix">
+    <div class="container inner">
+      <h3 class="masthead-brand">Reddit-flair-search</h3>
+      <nav>
+        <ul class="nav masthead-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li class ="active"><a href="#">Statistics</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<h4>The predicted flair is: {{result}}</h4>
 <br>
-<h2>Actual flair is: {{flair}}</h2>
+<h4>Actual flair is: {{flair}}</h4>
 
 {% endblock %}
