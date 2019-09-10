@@ -1,6 +1,4 @@
 #importing libraries
-import os
-import numpy as np
 import flask
 import pickle
 from flask import Flask, render_template,request
@@ -77,7 +75,7 @@ def index():
 def flair():
     URL=request.form['GetURL']
     combined_str, flair = Praw_data(URL)
-    loaded_model = pickle.load(open("../model(2).pkl","rb"))
+    loaded_model = pickle.load(open("model(2).pkl","rb"))
     result=loaded_model.predict([combined_str])
     result=result[0]
     return render_template('flair.html',result = str(result),flair=flair)
