@@ -42,7 +42,7 @@ def edit2(words):
         return words
 
 def Praw_data(URL):
-    reddit = praw.Reddit(client_id='KDMo4mS_QD1eqw', client_secret='RPKj_1mVLobhY7IBbFhHiu0nY4o', user_agent='WebScrapper') # Using credentials to use Reddit API
+    reddit = praw.Reddit(client_id='%', client_secret='%', user_agent='WebScrapper') # Using credentials to use Reddit API
     Info = reddit.submission(url=URL)
     posts = []
     Info.comments.replace_more(limit=0)
