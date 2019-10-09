@@ -1,7 +1,7 @@
 import praw
 import pandas as pd
 
-reddit = praw.Reddit(client_id='KDMo4mS_QD1eqw', client_secret='RPKj_1mVLobhY7IBbFhHiu0nY4o', user_agent='WebScrapper') # Using credentials to use Reddit API
+reddit = praw.Reddit(client_id='3', client_secret='#', user_agent='#') # Using credentials to use Reddit API
 Indian_reddit =reddit.subreddit('India') # Subreddit in reddit
 
 
